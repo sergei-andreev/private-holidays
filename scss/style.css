@@ -70,6 +70,7 @@ html {
   color: #fff;
   text-transform: uppercase;
   text-align: center;
+  letter-spacing: 3px;
 }
 
 .welcome__inputs {
@@ -144,11 +145,74 @@ select,
   opacity: 0;
 }
 
-select option:hover {
-  color: #f31131;
+.vacation {
+  margin: 100px 0;
+  padding-bottom: 300px;
 }
 
-.type-vacation {
-  margin: 300px 0;
+.vacation__separator {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.vacation__types {
+  margin-bottom: 200px;
+}
+
+.vacation__type {
+  width: 360px;
+  height: 300px;
+  background-color: yellow;
+  float: left;
+  margin-right: 30px;
+}
+
+.vacation__type:last-child {
+  margin-right: 0;
+}
+
+.vacation__type--beach {
+  background: url("../img/beach.png");
+  background-size: cover;
+  background-position: 50% 50%;
+}
+
+.vacation__type--group {
+  background: url("../img/group.png");
+  background-size: cover;
+  background-position: 50% 50%;
+}
+
+.vacation__type--city {
+  background: url("../img/city.png");
+  background-size: cover;
+  background-position: 50% 50%;
+}
+
+.vacation-type__inner {
+  width: 300px;
+  height: 100px;
+  padding: 15px 15px;
+  margin: 0 auto;
+  margin-top: 170px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  background-color: #fff;
+}
+
+.vacation-type__text {
+  margin: 0;
+  padding: 20px 10px;
+  font-size: 2.4rem;
+  border: 1px solid #cccccc;
+  text-align: center;
+  font-weight: 600;
+  color: #454851;
+}
+
+.title {
+  font-size: 4.8rem;
+  text-align: center;
+  margin-bottom: 20px;
 }
 /*# sourceMappingURL=style.css.map */
