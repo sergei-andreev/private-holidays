@@ -1,12 +1,97 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
+
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Document</title>
+
+  <link href="https://fonts.googleapis.com/css?family=Raleway:300,400,600,800" rel="stylesheet">
+
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+    integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+
+  <link rel="stylesheet" href="./scss/style.css">
+
 </head>
+
 <body>
-  
+  <!-- Header -->
+  <header class="header">
+
+    <nav class="header__nav nav">
+      <div class="container">
+        <ul class="nav__list">
+          <li class="nav__item">
+            <a class="nav__link" href="#"> Home</a>
+          </li>
+          <li class="nav__item">
+            <img class="nav__break" src="./img/menu-break.png" alt="">
+          </li>
+          <li class="nav__item">
+            <a class="nav__link" href="#"> Experiences</a>
+          </li>
+          <li class="nav__item">
+            <img class="nav__break" src="./img/menu-break.png" alt="">
+          </li>
+
+          <a class="nav__link" href="#"> <img class="logo" src="./img/logo.png" alt=""></a>
+
+          <li class="nav__item">
+            <img class="nav__break" src="./img/menu-break.png" alt="">
+          </li>
+          <li class="nav__item">
+            <a class="nav__link" href="#"> Questions</a>
+          </li>
+          <li class="nav__item">
+            <img class="nav__break" src="./img/menu-break.png" alt="">
+          </li>
+          <li class="nav__item">
+            <a class="nav__link" href="#"> Contacts</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+  <!-- .Header -->
+
+  <section class="welcome">
+    <div class="container-fluid welcome__container">
+      <h1 class="welcome__title">
+        Enjoy freedom land
+      </h1>
+      <div class="welcome__inputs">
+        <select class="welcome__select">
+          <option>Mauritius</option>
+          <option>Spain</option>
+          <option>France</option>
+          <option>Greece</option>
+
+        </select>
+        <!-- <input class="welcome__input" type="text" placeholder="Mauritius"> -->
+        <input class="welcome__input" type="date" placeholder="24 Sept 2016">
+        <input class="welcome__input" type="date" placeholder="10 Oct 2016">
+        <select class="welcome__select">
+            <option>1 Bedroom</option>
+            <option>2 Bedrooms</option>
+            <option>3 Bedrooms</option>
+            <option>4 Bedrooms</option>
+            <option>5 Bedrooms</option>
+          </select>
+        <button class="welcome__btn" type="submit">
+          <i class="fas fa-chevron-right"></i>
+        </button>
+      </div>
+    </div>
+  </section>
+
+
+  <section class="type-vacation">
+    <p></p>
+  </section>
+
 </body>
+
 </html>
