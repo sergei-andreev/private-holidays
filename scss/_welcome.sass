@@ -1,0 +1,86 @@
+// Welcome
+    
+.welcome__container
+    height: 690px
+    background: url('../img/bg.png') no-repeat
+    background-position: 100% 40%
+    // background-size: contain
+
+.welcome
+    font-family: $Raleway
+
+    &__title
+        margin: 0 auto
+        padding-top: 320px
+        font-size: 6rem
+        color: $white
+        text-transform: uppercase
+        text-align: center
+        letter-spacing: 3px
+
+    &__inputs
+        display: flex
+        margin: 0 auto
+        margin-top: 220px
+        width: 970px
+        height: 160px
+        justify-content: space-around
+        align-items: center
+        background-color: $white
+        padding: 0 40px 
+
+    &__input,
+    &__select
+        width: 190px
+        height: 50px
+        border: none
+        border-bottom: 1px solid $light-gray
+        font-weight: 400
+        font-size: 1.6rem
+        color: $black
+        transition: .3s
+        opacity: 0.6
+
+    &__select:hover,
+    &__input:focus,
+    &__input:active,
+    &__input:hover
+        border-bottom: 1px solid $black
+        color: $black
+        outline: none
+        transition: .3s
+        opacity: 1
+
+    &__btn
+        width: 40px
+        height: 40px 
+        border: none
+        border-radius: 100%
+        color: $white
+        background-color: $red
+        transition: 0.3s
+
+    &__btn:hover
+        background-color: darken($red, 10%)
+        transition: 0.3s
+
+
+    &__btn:focus,
+    &__btn:active
+        outline: none
+
+select
+      appearance: none    
+      outline: none
+
+select,
+[type="date"] 
+    background:#fff url('../img/dropdown.png')  97% 50% no-repeat
+
+[type="date"]::-webkit-inner-spin-button 
+    display: none
+
+[type="date"]::-webkit-calendar-picker-indicator 
+    opacity: 0
+
+// .Welcome
