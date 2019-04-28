@@ -1,8 +1,16 @@
+html {
+  font-size: 10px;
+}
+
 html,
 body {
   padding: 0;
   margin: 0;
   background-color: #ecf0f1;
+}
+
+.section {
+  margin-top: 100px;
 }
 
 .container {
@@ -15,14 +23,13 @@ body {
   margin: 0 auto;
 }
 
-html {
-  font-size: 10px;
+.header-section__title {
+  font-size: 4.8rem;
 }
 
-.title {
-  font-size: 4.8rem;
+.header-section__title, .header-section__separator {
   text-align: center;
-  margin-bottom: 20px;
+  margin-bottom: 30px;
 }
 
 .nav {
@@ -63,6 +70,7 @@ html {
   height: 690px;
   background: url("../img/bg.png") no-repeat;
   background-position: 100% 40%;
+  margin-bottom: 150px;
 }
 
 .welcome {
@@ -159,18 +167,8 @@ select,
   opacity: 0;
 }
 
-.vacation {
-  margin: 100px 0;
-  padding-bottom: 300px;
-}
-
-.vacation__separator {
-  text-align: center;
-  margin-bottom: 20px;
-}
-
 .vacation__types {
-  margin-bottom: 200px;
+  display: inline-block;
 }
 
 .vacation__type {
