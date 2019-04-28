@@ -34,6 +34,7 @@ body {
 
 .nav {
   font-family: "Raleway", sans-serif;
+  padding: 5px;
 }
 
 .nav__list {
@@ -220,5 +221,86 @@ select,
   text-align: center;
   font-weight: 600;
   color: #454851;
+}
+
+.holiday__items {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-rows: 1fr 1fr;
+      grid-template-rows: 1fr 1fr;
+  -ms-grid-columns: 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
+  grid-gap: 30px;
+}
+
+.holiday-item {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
+  max-width: 555px;
+  background-color: #fff;
+}
+
+.holiday-item__images {
+  display: -ms-grid;
+  display: grid;
+      grid-template-areas: "img-1 img-1 img-1" "img-2 img-3 img-4";
+}
+
+.holiday-item__image--1 {
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 3;
+  grid-area: img-1;
+  max-width: 279px;
+  height: 230px;
+}
+
+.holiday-item__image--2 {
+  -ms-grid-row: 2;
+  -ms-grid-column: 1;
+  grid-area: img-2;
+  width: 93px;
+  height: 70px;
+}
+
+.holiday-item__image--3 {
+  -ms-grid-row: 2;
+  -ms-grid-column: 2;
+  grid-area: img-3;
+  width: 93px;
+  height: 70px;
+}
+
+.holiday-item__image--4 {
+  -ms-grid-row: 2;
+  -ms-grid-column: 3;
+  grid-area: img-4;
+  width: 93px;
+  height: 70px;
+}
+
+.holiday-item__info {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-rows: auto auto auto auto;
+      grid-template-rows: auto auto auto auto;
+  padding: 30px 20px;
+}
+
+.holiday-item__title {
+  font-size: 3rem;
+}
+
+.holiday-item__text {
+  font-size: 1.6rem;
+  font-family: "Raleway", sans-serif;
+}
+
+.holiday__btn {
+  width: 120px;
+  border-radius: 20px;
+  border: none;
 }
 /*# sourceMappingURL=styles.css.map */
