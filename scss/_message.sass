@@ -1,3 +1,49 @@
 .message__container
     background: url('../img/message_bg.png') no-repeat
     height: 570px
+    display: flex
+    justify-content: flex-end
+    align-items: flex-end
+
+.message
+    &__form
+        display: flex
+        flex-direction: column
+        width: 311px
+        height: 320px
+        background-color: #ffffff
+        margin-right: 180px
+        padding: 40px
+
+    &__title
+        margin-top: 0
+        color: #1a1a1a
+        font-size: 30px
+        font-weight: 600
+        line-height: 27px
+
+    &__input
+        height: 16px
+        margin-bottom: 20px
+        color: #999999
+        font-family: Verdana
+        font-size: 18px
+        font-weight: 400
+        line-height: 24px
+        padding: 10px
+        border: none
+        border-bottom: 1px solid gray
+
+    &__btn
+        font-family: Verdana
+        margin-top: auto
+        width: 97px
+        height: 41px
+        background-color: #f31131
+        border-radius: 20px
+        border: none
+        color: $white
+        font-size: 14px
+        font-weight: 300
+        text-transform: uppercase
+        letter-spacing: 1.05px

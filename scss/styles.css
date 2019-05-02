@@ -372,5 +372,123 @@ select,
 .message__container {
   background: url("../img/message_bg.png") no-repeat;
   height: 570px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+}
+
+.message__form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 311px;
+  height: 320px;
+  background-color: #ffffff;
+  margin-right: 180px;
+  padding: 40px;
+}
+
+.message__title {
+  margin-top: 0;
+  color: #1a1a1a;
+  font-size: 30px;
+  font-weight: 600;
+  line-height: 27px;
+}
+
+.message__input {
+  height: 16px;
+  margin-bottom: 20px;
+  color: #999999;
+  font-family: Verdana;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 24px;
+  padding: 10px;
+  border: none;
+  border-bottom: 1px solid gray;
+}
+
+.message__btn {
+  font-family: Verdana;
+  margin-top: auto;
+  width: 97px;
+  height: 41px;
+  background-color: #f31131;
+  border-radius: 20px;
+  border: none;
+  color: #fff;
+  font-size: 14px;
+  font-weight: 300;
+  text-transform: uppercase;
+  letter-spacing: 1.05px;
+}
+
+* {
+  outline: 1px solid red;
+}
+
+.footer {
+  height: 300px;
+}
+
+.footer__links {
+  background-color: #171d1c;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  font-family: Verdana;
+  color: #ffffff;
+  font-size: 14px;
+  font-weight: 400;
+  -ms-flex-preferred-size: 200px;
+      flex-basis: 200px;
+  padding: 20px 180px 20px 115px;
+  line-height: 25px;
+  letter-spacing: 0.8px;
+}
+
+.footer__menu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-preferred-size: 700px;
+      flex-basis: 700px;
+}
+
+.footer__links li:not(.footer-menu__title) {
+  opacity: 0.7;
+}
+
+.footer__contacts {
+  text-align: right;
+}
+
+.footer__links li {
+  list-style-type: none;
+}
+
+.footer__links ul {
+  padding: 0;
+}
+
+.footer-menu__title {
+  font-weight: 600;
 }
 /*# sourceMappingURL=styles.css.map */
