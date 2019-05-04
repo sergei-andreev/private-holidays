@@ -34,7 +34,7 @@ body {
 
 .nav {
   font-family: "Raleway", sans-serif;
-  padding: 5px;
+  padding: 5px 0;
 }
 
 .nav__list {
@@ -51,18 +51,13 @@ body {
 
 .nav__item {
   padding: 10px;
-  list-style: none;
   font-size: 1.6rem;
-  text-transform: uppercase;
   font-weight: 600;
+  text-transform: uppercase;
+  list-style: none;
 }
 
 .nav__link {
-  color: #454851;
-  text-decoration: none;
-}
-
-.nav__link:hover {
   color: #454851;
   text-decoration: none;
 }
@@ -411,10 +406,10 @@ select,
   margin-bottom: 20px;
   color: #999999;
   font-family: Verdana;
-  font-size: 18px;
+  font-size: 16px;
   font-weight: 400;
   line-height: 24px;
-  padding: 10px;
+  padding: 5px;
   border: none;
   border-bottom: 1px solid gray;
 }
@@ -432,10 +427,6 @@ select,
   font-weight: 300;
   text-transform: uppercase;
   letter-spacing: 1.05px;
-}
-
-* {
-  outline: 1px solid red;
 }
 
 .footer {
