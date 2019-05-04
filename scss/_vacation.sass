@@ -1,6 +1,6 @@
 // Vacation
     
-@mixin vacation-type($img)
+@mixin bg-item($img)
     background: url('../img/#{$img}.png')
     background-size: cover
     background-position: 50% 50%
@@ -21,11 +21,11 @@
             margin-right: 0
         
         &--beach
-            @include vacation-type(beach)
+            @include bg-item(beach)
         &--group
-            @include vacation-type(group)
+            @include bg-item(group)
         &--city
-            @include vacation-type(city)
+            @include bg-item(city)
 
 .vacation-type
     &__inner

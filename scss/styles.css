@@ -32,6 +32,13 @@ body {
   margin-bottom: 30px;
 }
 
+.text {
+  font-size: 1.6rem;
+  font-family: "Raleway", sans-serif;
+  color: #454851;
+  line-height: 22px;
+}
+
 .nav {
   font-family: "Raleway", sans-serif;
   padding: 5px 0;
@@ -231,54 +238,29 @@ body {
   background-color: #fff;
 }
 
-.holiday-item__images {
-  display: -ms-grid;
-  display: grid;
-      grid-template-areas: "img-1 img-1 img-1" "img-2 img-3 img-4";
-}
-
 .holiday-item__image--1 {
-  -ms-grid-row: 1;
-  -ms-grid-column: 1;
-  -ms-grid-column-span: 3;
-  grid-area: img-1;
   width: 279px;
   height: 230px;
 }
 
-.holiday-item__image--2 {
-  -ms-grid-row: 2;
-  -ms-grid-column: 1;
-  grid-area: img-2;
-  width: 93px;
-  height: 70px;
-}
-
-.holiday-item__image--3 {
-  -ms-grid-row: 2;
-  -ms-grid-column: 2;
-  grid-area: img-3;
-  width: 93px;
+.holiday-item__image--2, .holiday-item__image--3, .holiday-item__image--4 {
+  width: 91px;
   height: 70px;
 }
 
 .holiday-item__image--4 {
-  -ms-grid-row: 2;
-  -ms-grid-column: 3;
-  grid-area: img-4;
-  width: 93px;
-  height: 70px;
+  width: 92px;
 }
 
 .holiday-item__title {
-  margin: 30px 30px 20px 20px;
+  margin: 30px 20px 20px 20px;
   font-size: 3rem;
+  font-weight: 600;
+  color: #171d1c;
 }
 
 .holiday-item__text {
   margin: 0px 30px 20px 20px;
-  font-size: 1.6rem;
-  font-family: "Raleway", sans-serif;
 }
 
 .holiday-item__services {
@@ -295,7 +277,7 @@ body {
   vertical-align: top;
   margin-left: 10px;
   color: #454851;
-  font-size: 14px;
+  font-size: 1.4rem;
   font-weight: 600;
 }
 
@@ -307,7 +289,7 @@ body {
   border: none;
   background-color: #f31131;
   color: #fff;
-  font-size: 14px;
+  font-size: 1.4rem;
   font-weight: 300;
   text-transform: uppercase;
   letter-spacing: 1.05px;
@@ -331,21 +313,6 @@ body {
   margin-bottom: 25px;
 }
 
-.why-we__title {
-  color: #171d1c;
-  font-size: 24px;
-  font-weight: 600;
-  text-align: center;
-}
-
-.why-we__text {
-  color: #454851;
-  font-size: 16px;
-  font-weight: 300;
-  line-height: 22px;
-  text-align: center;
-}
-
 .why-we__icon--first {
   background: url("../img/first.png") no-repeat 50%, #0f9c54;
 }
@@ -356,6 +323,17 @@ body {
 
 .why-we__icon--third {
   background: url("../img/third.png") no-repeat 50%, #0f9c54;
+}
+
+.why-we__title {
+  color: #171d1c;
+  font-size: 24px;
+  font-weight: 600;
+  text-align: center;
+}
+
+.why-we__text {
+  text-align: center;
 }
 
 .message__container {

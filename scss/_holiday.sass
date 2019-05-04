@@ -3,49 +3,33 @@
     grid-template-rows: 1fr 1fr
     grid-template-columns: 1fr 1fr
     grid-gap: 30px
-    
-    
+      
 .holiday-item
     display: grid
     grid-template-columns: 1fr 1fr
     max-width: 555px
     background-color: $white
 
-
-    &__images
-        display: grid
-        grid-template-areas: "img-1 img-1 img-1" "img-2 img-3 img-4"
-        
-    &__image--1
-        grid-area: img-1
-        width: 279px
-        height: 230px
-
-    &__image--2
-        grid-area: img-2
-        width: 93px
-        height: 70px 
-        
-    &__image--3
-        grid-area: img-3 
-        width: 93px
-        height: 70px
-
-    &__image--4
-        grid-area: img-4
-        width: 93px
-        height: 70px
-
-    &__info
+    &__image
+        &--1
+            width: 279px
+            height: 230px
+        &--2,
+        &--3,
+        &--4
+            width: 91px
+            height: 70px   
+        &--4
+            width: 92px
 
     &__title
-        margin: 30px 30px 20px 20px
+        margin: 30px 20px 20px 20px
         font-size: 3rem
+        font-weight: 600
+        color: #171d1c
 
     &__text
         margin: 0px 30px 20px 20px
-        font-size: 1.6rem
-        font-family: $font-Raleway
     
     &__services   
         margin: 20px 30px 25px 20px
@@ -59,9 +43,9 @@
         vertical-align: top
         margin-left: 10px
         color: $black
-        font-size: 14px
+        font-size: 1.4rem
         font-weight: 600
-
+    
 .holiday__btn
     margin-left: 20px
     width: 120px
@@ -70,7 +54,7 @@
     border: none
     background-color: $red
     color: $white
-    font-size: 14px
+    font-size: 1.4rem
     font-weight: 300
     text-transform: uppercase
     letter-spacing: 1.05px

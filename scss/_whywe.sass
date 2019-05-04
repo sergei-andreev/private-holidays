@@ -1,37 +1,38 @@
-.why-we__items
-    display: grid
-    grid-gap: 60px
-    grid-template-columns: 1fr 1fr 1fr
+@mixin bg-icon($img)
+    background: url('../img/#{$img}.png') no-repeat 50%, #0f9c54
+    
+.why-we
+    &__items
+        display: grid
+        grid-gap: 60px
+        grid-template-columns: 1fr 1fr 1fr
 
-.why-we__item
+    &__icon
+        width: 100px
+        height: 100px
+        text-align: center
+        background-color: #0f9c54
+        margin: 0 auto
+        border-radius: 100%
+        margin-bottom: 25px
 
-.why-we__icon
-    width: 100px
-    height: 100px
-    text-align: center
-    background-color: #0f9c54
-    margin: 0 auto
-    border-radius: 100%
-    margin-bottom: 25px
-
-.why-we__title
-    color: #171d1c
-    font-size: 24px
-    font-weight: 600
-    text-align: center
-
-.why-we__text
-    color: #454851
-    font-size: 16px
-    font-weight: 300
-    line-height: 22px
-    text-align: center
-
-.why-we__icon--first
-    background: url("../img/first.png") no-repeat 50%, #0f9c54
+        &--first
+            @include bg-icon(first)
         
-.why-we__icon--second
-    background: url("../img/second.png") no-repeat 50%, #0f9c54
+        &--second
+            @include bg-icon(second)
 
-.why-we__icon--third
-    background: url("../img/third.png") no-repeat 50%, #0f9c54
+        &--third
+            @include bg-icon(third)
+
+    &__title
+        color: #171d1c
+        font-size: 24px
+        font-weight: 600
+        text-align: center
+
+    &__text
+        text-align: center
+
+
+    
