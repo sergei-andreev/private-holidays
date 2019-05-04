@@ -83,14 +83,14 @@ body {
   letter-spacing: 3px;
 }
 
-.welcome__inputs {
+.search {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  margin: 0 auto;
-  margin-top: 220px;
   max-width: 970px;
   height: 160px;
+  margin: 0 auto;
+  margin-top: 220px;
   -ms-flex-pack: distribute;
       justify-content: space-around;
   -webkit-box-align: center;
@@ -100,7 +100,7 @@ body {
   padding: 0 40px;
 }
 
-.welcome__input, .welcome__select {
+.search__input, .search__select {
   width: 190px;
   height: 50px;
   border: none;
@@ -111,9 +111,13 @@ body {
   -webkit-transition: .3s;
   transition: .3s;
   opacity: 0.6;
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  outline: none;
 }
 
-.welcome__select:hover, .welcome__input:focus, .welcome__input:active, .welcome__input:hover {
+.search__select:hover, .search__input:focus, .search__input:active, .search__input:hover {
   border-bottom: 1px solid #454851;
   color: #454851;
   outline: none;
@@ -122,44 +126,34 @@ body {
   opacity: 1;
 }
 
-.welcome__btn {
+.search__btn {
   width: 40px;
   height: 40px;
   border: none;
   border-radius: 100%;
   color: #fff;
   background-color: #f31131;
-  -webkit-transition: 0.3s;
-  transition: 0.3s;
+  -webkit-transition: 1s;
+  transition: 1s;
 }
 
-.welcome__btn:hover {
-  background-color: #c70a25;
-  -webkit-transition: 0.3s;
-  transition: 0.3s;
+.search__btn:hover {
+  background: none;
+  border: 1px solid #f31131;
+  -webkit-transition: .7s;
+  transition: .7s;
+  color: #f31131;
 }
 
-.welcome__btn:focus, .welcome__btn:active {
-  outline: none;
-}
-
-select {
-  -webkit-appearance: none;
-     -moz-appearance: none;
-          appearance: none;
-  outline: none;
-}
-
-select,
-[type="date"] {
+.search__select, .search__input {
   background: #fff url("../img/dropdown.png") 97% 50% no-repeat;
 }
 
-[type="date"]::-webkit-inner-spin-button {
+.search__input::-webkit-inner-spin-button {
   display: none;
 }
 
-[type="date"]::-webkit-calendar-picker-indicator {
+.search__input::-webkit-calendar-picker-indicator {
   opacity: 0;
 }
 
