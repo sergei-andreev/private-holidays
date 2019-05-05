@@ -25,6 +25,7 @@ body {
 
 .header-section__title {
   font-size: 4.8rem;
+  color: #171d1c;
 }
 
 .header-section__title, .header-section__separator {
@@ -327,7 +328,7 @@ body {
 
 .why-we__title {
   color: #171d1c;
-  font-size: 24px;
+  font-size: 2.4rem;
   font-weight: 600;
   text-align: center;
 }
@@ -360,15 +361,15 @@ body {
           flex-direction: column;
   width: 311px;
   height: 320px;
-  background-color: #ffffff;
+  background-color: #fff;
   margin-right: 180px;
   padding: 40px;
 }
 
 .message__title {
   margin-top: 0;
-  color: #1a1a1a;
-  font-size: 30px;
+  color: #171d1c;
+  font-size: 3rem;
   font-weight: 600;
   line-height: 27px;
 }
@@ -376,14 +377,39 @@ body {
 .message__input {
   height: 16px;
   margin-bottom: 20px;
-  color: #999999;
+  color: #454851;
   font-family: Verdana;
   font-size: 16px;
   font-weight: 400;
   line-height: 24px;
   padding: 5px;
   border: none;
-  border-bottom: 1px solid gray;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.message__input:focus {
+  outline: none;
+  border-bottom: 1px solid #454851;
+}
+
+.message__input:focus::-webkit-input-placeholder {
+  color: transparent;
+}
+
+.message__input::-webkit-input-placeholder {
+  opacity: 0.6;
+}
+
+.message__input:-ms-input-placeholder {
+  opacity: 0.6;
+}
+
+.message__input::-ms-input-placeholder {
+  opacity: 0.6;
+}
+
+.message__input::placeholder {
+  opacity: 0.6;
 }
 
 .message__btn {

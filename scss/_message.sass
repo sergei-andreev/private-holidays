@@ -11,29 +11,40 @@
         flex-direction: column
         width: 311px
         height: 320px
-        background-color: #ffffff
+        background-color: $white
         margin-right: 180px
         padding: 40px
 
     &__title
         margin-top: 0
-        color: #1a1a1a
-        font-size: 30px
+        color: $black-title
+        font-size: 3rem
         font-weight: 600
         line-height: 27px
 
     &__input
         height: 16px
         margin-bottom: 20px
-        color: #999999
+        color: $black
         font-family: Verdana
         font-size: 16px
         font-weight: 400
         line-height: 24px
         padding: 5px
         border: none
-        border-bottom: 1px solid gray
+        border-bottom: 1px solid rgba(0,0,0, 0.1)
+    
+        &:focus
+            outline: none  
+            border-bottom: 1px solid $black 
 
+        &:focus::-webkit-input-placeholder 
+            color: transparent
+
+        &::placeholder
+            opacity: 0.6
+            
+        
     &__btn
         font-family: Verdana
         margin-top: auto
