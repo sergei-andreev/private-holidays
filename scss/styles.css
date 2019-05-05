@@ -40,6 +40,19 @@ body {
   line-height: 22px;
 }
 
+.btn {
+  -webkit-transition: 1s;
+  transition: 1s;
+}
+
+.btn:hover {
+  background: none;
+  border: 1px solid #f31131;
+  -webkit-transition: .7s;
+  transition: .7s;
+  color: #f31131;
+}
+
 .nav {
   font-family: "Raleway", sans-serif;
   padding: 5px 0;
@@ -473,7 +486,7 @@ body {
 .footer-menu__title {
   list-style-type: none;
   text-decoration: none;
-  color: white;
+  color: #fff;
 }
 
 .footer-menu__list {
