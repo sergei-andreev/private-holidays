@@ -440,8 +440,8 @@ body {
       -ms-flex-pack: justify;
           justify-content: space-between;
   font-family: Verdana;
-  color: #ffffff;
-  font-size: 14px;
+  color: #fff;
+  font-size: 1.4rem;
   font-weight: 400;
   -ms-flex-preferred-size: 200px;
       flex-basis: 200px;
@@ -461,7 +461,7 @@ body {
       flex-basis: 700px;
 }
 
-.footer__links li:not(.footer-menu__title) {
+.footer-menu__link:not(.footer-menu__title) {
   opacity: 0.7;
 }
 
@@ -469,12 +469,16 @@ body {
   text-align: right;
 }
 
-.footer__links li {
+.footer-menu__link,
+.footer-menu__title {
   list-style-type: none;
+  text-decoration: none;
+  color: white;
 }
 
-.footer__links ul {
+.footer-menu__list {
   padding: 0;
+  list-style-type: none;
 }
 
 .footer-menu__title {
