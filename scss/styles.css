@@ -53,6 +53,14 @@ body {
   color: #f31131;
 }
 
+.header-small {
+  display: none;
+}
+
+.header {
+  display: block;
+}
+
 .nav {
   font-family: "Raleway", sans-serif;
   padding: 5px 0;
@@ -565,6 +573,88 @@ body {
   }
   .why-we__text {
     font-size: 1.4rem;
+  }
+}
+
+@media screen and (max-width: 1139px) {
+  .vacation__types {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+}
+
+@media screen and (max-width: 990px) {
+  .vacation__types {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .vacation-type {
+    margin: 0;
+    margin-bottom: 10px;
+    width: 650px;
+  }
+  .search__select,
+  .search__input {
+    margin-right: 20px;
+  }
+}
+
+@media screen and (max-width: 860px) {
+  .header-small {
+    display: block;
+  }
+  .header {
+    display: none;
+  }
+  .nav__menu {
+    display: block;
+    position: relative;
+    font-size: 3rem;
+    font-weight: 600;
+  }
+  .nav__submenu {
+    position: absolute;
+    left: -130px;
+    top: 35px;
+    background-color: #ecf0f1;
+    padding: 0px;
+    border: 1px solid #cccccc;
+    display: none;
+  }
+  .nav__submenu-item {
+    padding: 5px 15px;
+    font-size: 1.6rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    list-style: none;
+  }
+  .nav__submenu-link {
+    color: #454851;
+    text-decoration: none;
+  }
+  .nav__list .nav__menu:hover .nav__submenu {
+    -webkit-transition: 0.5s;
+    transition: 0.5s;
+    display: block;
+  }
+  .nav__submenu-item:hover {
+    background-color: #f31131;
+  }
+  .nav__submenu-item:hover .nav__submenu-link {
+    color: #fff;
+    -webkit-transition: 0.5s;
+    transition: 0.5s;
+  }
+  .nav__menu .nav__link:hover {
+    color: #f31131;
+    -webkit-transition: 0.5s;
+    transition: 0.5s;
   }
 }
 /*# sourceMappingURL=styles.css.map */
