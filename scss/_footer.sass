@@ -1,41 +1,41 @@
 .footer
     height: 300px
 
-.footer__links
-    background-color: $black-title
-    display: flex
-    justify-content: space-between
-    font-family: Verdana
-    color: $white
-    font-size: 1.4rem
-    font-weight: 400
-    flex-basis: 200px
-    padding: 20px 180px 20px 115px
-    line-height: 25px
-    letter-spacing: 0.8px
+    &__links
+        background-color: $black-title
+        display: flex
+        justify-content: space-between
+        font-family: Verdana
+        color: $white
+        font-size: 1.4rem
+        font-weight: 400
+        flex-basis: 200px
+        padding: 20px 180px 20px 115px
+        line-height: 25px
+        letter-spacing: 0.8px
 
-.footer__menu
-    display: flex
-    justify-content: space-between
-    flex-basis: 700px
+    &__menu
+        display: flex
+        justify-content: space-between
+        flex-basis: 700px
     
-.footer-menu__link:not(.footer-menu__title)
-    opacity: 0.7
+    &-menu__link:not(.footer-menu__title)
+        opacity: 0.7
     
-.footer__contacts
-    text-align: right
+    &__contacts
+        text-align: right
+        &--hidden 
+            display: none
 
-.footer-menu__link,
-.footer-menu__title
-    list-style-type: none
-    text-decoration: none
-    color: $white
+.footer-menu
+    &__link,
+    &__title
+        list-style-type: none
+        text-decoration: none
+        color: $white
+    &__list
+        padding: 0
+        list-style-type: none
+    &__title
+        font-weight: 600
 
-.footer-menu__list
-    padding: 0
-    list-style-type: none
-
-.footer-menu__title
-    font-weight: 600
-
-.footer__contacts
