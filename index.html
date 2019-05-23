@@ -24,27 +24,56 @@
   <!-- Header -->
 
   <header class="header">
+      <nav class="header__nav nav">
+        <div class="container">
+          <ul class="nav__list">
+            <li class="nav__item">
+              <a class="nav__link" href="#"> Home</a>
+            </li>
+            <img class="nav__break" src="./img/menu-break.png" alt="">
+            <li class="nav__item">
+              <a class="nav__link" href="#"> Experiences</a>
+            </li>
+            <img class="nav__break" src="./img/menu-break.png" alt="">
+            <a class="nav__link" href="#">
+              <img class="logo" src="./img/logo.png" alt="">
+            </a>
+            <img class="nav__break" src="./img/menu-break.png" alt="">
+            <li class="nav__item">
+              <a class="nav__link" href="#"> Questions</a>
+            </li>
+            <img class="nav__break" src="./img/menu-break.png" alt="">
+            <li class="nav__item">
+              <a class="nav__link" href="#"> Contacts</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+
+  <header class="header-small">
     <nav class="header__nav nav">
       <div class="container">
-        <ul class="nav__list">
-          <li class="nav__item">
-            <a class="nav__link" href="#"> Home</a>
-          </li>
-          <img class="nav__break" src="./img/menu-break.png" alt="">
-          <li class="nav__item">
-            <a class="nav__link" href="#"> Experiences</a>
-          </li>
-          <img class="nav__break" src="./img/menu-break.png" alt="">
-          <a class="nav__link" href="#">
-            <img class="logo" src="./img/logo.png" alt="">
-          </a>
-          <img class="nav__break" src="./img/menu-break.png" alt="">
-          <li class="nav__item">
-            <a class="nav__link" href="#"> Questions</a>
-          </li>
-          <img class="nav__break" src="./img/menu-break.png" alt="">
-          <li class="nav__item">
-            <a class="nav__link" href="#"> Contacts</a>
+          <ul class="nav__list">
+              <a class="nav__link" href="#">
+                  <img class="logo" src="./img/logo.png" alt="">
+                </a>
+            <li class="nav__menu">
+              <a class="nav__link" href="#"><i class="fas fa-bars"></i></a>
+              <ul class="nav__submenu">
+                <li class="nav__submenu-item">
+                  <a class="nav__submenu-link" href="#"> Home</a>
+                </li>
+                <li class="nav__submenu-item">
+                  <a class="nav__submenu-link" href="#"> Experiences</a>
+                </li> 
+                <li class="nav__submenu-item">
+                  <a class="nav__submenu-link" href="#"> Questions</a>
+                </li>
+                <li class="nav__submenu-item">
+                  <a class="nav__submenu-link" href="#"> Contacts</a>
+                </li>
+              </ul>
           </li>
         </ul>
       </div>
@@ -77,7 +106,7 @@
           <option>4 Bedrooms</option>
           <option>5 Bedrooms</option>
         </select>
-        <button class="search__btn" type="submit">
+        <button class="search__btn btn" type="submit">
           <i class="fas fa-chevron-right"></i>
         </button>
       </div>
@@ -169,7 +198,7 @@
               </div>
               <img class="holiday-item__service holiday-item__service--beachfront" src="./img/beachfront.png" alt="">
             </div>
-            <button class="holiday__btn">Book now</button>
+            <button class="holiday__btn btn">Book now</button>
           </div>
         </div>
 
@@ -196,7 +225,7 @@
               <img class="holiday-item__service holiday-item__service--beachfront" src="./img/beachfront.png" alt="">
               <img class="holiday-item__service holiday-item__service--pool" src="./img/pool.png" alt="">
             </div>
-            <button class="holiday__btn">Book now</button>
+            <button class="holiday__btn btn">Book now</button>
           </div>
         </div>
 
@@ -223,7 +252,7 @@
               <img class="holiday-item__service holiday-item__service--beachfront" src="./img/beachfront.png" alt="">
               <img class="holiday-item__service holiday-item__service--pool" src="./img/pool.png" alt="">
             </div>
-            <button class="holiday__btn">Book now</button>
+            <button class="holiday__btn btn">Book now</button>
           </div>
         </div>
 
@@ -367,7 +396,6 @@
             <li><a class="footer-menu__link" href="#">Agra</a></li>
           </ul>
           <ul class="footer-menu__list">
-            <li><br></li>
             <li><a class="footer-menu__link" href="#">Coorg</a></li>
             <li><a class="footer-menu__link" href="#">Mysore</a></li>
             <li><a class="footer-menu__link" href="#">Gir</a></li>
@@ -378,15 +406,20 @@
             <li><a class="footer-menu__link" href="#">Shimla</a></li>
           </ul>
         </div>
-        <ul class="footer__contacts">
-          <li class="footer-menu__link">Phone: +91-80-41127931</li>
-          <li class="footer-menu__link">Email: info@aztechdesign.co</li>
-          <li class="footer-menu__link"><br></li>
+        <ul class="footer__contacts footer__contacts--shown">
+          <li class="footer-menu__title">Phone</li>
+          <li class="footer-menu__link">+91-80-41127931</li>
+          <li class="footer-menu__title">Email</li>
+          <li class="footer-menu__link">info@aztechdesign.com</li>
+          <!-- <li class="footer-menu__link"><br></li> -->
           <li class="footer-menu__title">Address</li>
           <li class="footer-menu__link">1st Main, Bucharest</li>
           <li class="footer-menu__link">2nd Stage Raiffisen Tower,</li>
           <li class="footer-menu__link">Bucharest - 400400,</li>
           <li class="footer-menu__link">Romania</li>
+        </ul>
+        <ul class="footer__contacts footer__contacts--hidden">
+            <li class="footer-menu__title">Contacts</li>
         </ul>
       </div>
     </div>
