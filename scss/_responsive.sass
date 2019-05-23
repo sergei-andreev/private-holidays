@@ -68,7 +68,7 @@
     .vacation-type
         margin: 0
         margin-bottom: 20px
-        width: 650px
+        max-width: 650px
     
     .vacation-type:last-child
         margin-bottom: 0
@@ -78,8 +78,8 @@
         // margin-right: 20px
 
     .welcome__search
-        margin-left: inherit inherit
         flex-wrap: wrap
+        margin-top: 20vw
         margin-left: 200px
         margin-right: 200px
         padding: 20px
@@ -93,9 +93,26 @@
         content: "Search"
         font-size: 2rem
         letter-spacing: 2px
-        
+   
+@media screen and (max-width: 870px) 
+    .holiday-item
+        display: grid
+        grid-template-columns: 1fr
+        max-width: 410px
+        background-color: $white   
+
+    .holiday__btn
+        margin-bottom: 20px
+
 
 @media screen and (max-width: 860px)
+    .welcome__search
+        flex-wrap: wrap
+        padding: 20px
+        width: 200px
+        margin: 0 auto
+        margin-top: 100px
+        height: 300px
 
     .welcome__search
         margin-left: inherit inherit
@@ -165,7 +182,26 @@
     .footer__contacts .footer-menu__link
         display: block
 
-// @media screen and (max-width: 706px)   
+
+    .why-we__items
+        grid-template-columns: 1fr
+        grid-template-rows: 1fr 1fr 1fr
+        width: 400px
+        margin: 0 auto
+    
+
+@media screen and (max-width: 766px)  
+    .welcome__search
+        // height: 260px
+        // padding: 20px 40px
+
+    .welcome__title
+        padding-top: 200px
+        margin: auto 60px
+    .holiday-item__title
+        margin: 10px 10px 15px 20px
+
+
 
 
    
